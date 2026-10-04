@@ -19,9 +19,18 @@ const CONFIG = {
   // ── Business Information ───────────────────────────────────────────
   BUSINESS_NAME:    'WOW BAKES',
   BUSINESS_TAGLINE: 'Freshly Baked. Deliciously Made.',
-  BUSINESS_ADDRESS: '9/1, D.no. 6-9-18, Arundelpet, Opp. IndusInd Bank, Guntur - 522004, Andhra Pradesh',
+  BUSINESS_ADDRESS: '9/1, D.no. 6-9-18, Arundelpet, Opp. IndusInd Bank',
+  BUSINESS_CITY:    'Guntur',
+  BUSINESS_STATE:   'Andhra Pradesh',
+  BUSINESS_PINCODE: '522004',
   BUSINESS_PHONE:   '+91 99668 64859',
   BUSINESS_EMAIL:   'info@wowbakes.in',
+  WEBSITE_URL:      'https://wowbakes.in',
+
+  // ── Geo Coordinates (for structured data) ─────────────────────────
+  // Find yours at: https://maps.google.com → right-click your location → "What's here?"
+  LATITUDE:         '16.3067',   // WOW BAKES, Arundelpet, Guntur
+  LONGITUDE:        '80.4365',
 
   // ── Social Media ───────────────────────────────────────────────────
   INSTAGRAM_URL:    'https://www.instagram.com/wowbakes_guntur/',
