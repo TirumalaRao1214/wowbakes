@@ -1,0 +1,1054 @@
+﻿// WOW BAKES — Inline sample data (used when running from file://)
+// Auto-generated from data/sample-products.json
+window.SAMPLE_DATA = {
+  "categories": [
+    { "id": "cat-burgers",   "name": "Burgers",             "emoji": "ðŸ”", "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80", "displayOrder": 1, "active": true },
+    { "id": "cat-pizza",     "name": "Pizza",               "emoji": "ðŸ•", "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80", "displayOrder": 2, "active": true },
+    { "id": "cat-pasta",     "name": "Pasta",               "emoji": "ðŸ", "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&auto=format&fit=crop&q=80", "displayOrder": 3, "active": true },
+    { "id": "cat-nachos",    "name": "Nachos",              "emoji": "ðŸ«™", "imageURL": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&auto=format&fit=crop&q=80", "displayOrder": 4, "active": true },
+    { "id": "cat-fries",     "name": "Fries & Garlic Bread","emoji": "ðŸŸ", "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80", "displayOrder": 5, "active": true },
+    { "id": "cat-breads",    "name": "Between the Breads",  "emoji": "ðŸ¥ª", "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80", "displayOrder": 6, "active": true },
+    { "id": "cat-starters",  "name": "Starters",            "emoji": "ðŸ¥—", "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80", "displayOrder": 7, "active": true },
+    { "id": "cat-momos",     "name": "Momos",               "emoji": "ðŸ¥Ÿ", "imageURL": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&auto=format&fit=crop&q=80", "displayOrder": 8, "active": true },
+    { "id": "cat-maincourse","name": "Main Course",         "emoji": "ðŸ›", "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80", "displayOrder": 9, "active": true },
+    { "id": "cat-milkshakes","name": "Milkshakes",          "emoji": "ðŸ¥›", "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80", "displayOrder": 10, "active": true },
+    { "id": "cat-thickshakes","name": "Thickshakes",        "emoji": "ðŸ§‹", "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80", "displayOrder": 11, "active": true }
+  ],
+
+  "addons": [
+    { "id": "ao-001", "category": "Burgers",           "name": "Extra Cheese",       "price": 30,  "available": true },
+    { "id": "ao-002", "category": "Burgers",           "name": "Extra Patty",        "price": 40,  "available": true },
+    { "id": "ao-003", "category": "Pizza",             "name": "Regular Veggies",    "price": 20,  "available": true },
+    { "id": "ao-004", "category": "Pizza",             "name": "Extra Veggies",      "price": 30,  "available": true },
+    { "id": "ao-005", "category": "Pizza",             "name": "Extra Cheese",       "price": 40,  "available": true },
+    { "id": "ao-006", "category": "Pasta",             "name": "Garlic Bread - 2 Pcs","price": 49, "available": true },
+    { "id": "ao-007", "category": "Between the Breads","name": "Extra Cheese",       "price": 30,  "available": true },
+    { "id": "ao-008", "category": "Starters",          "name": "Extra Sauce",        "price": 20,  "available": true },
+    { "id": "ao-009", "category": "Main Course",       "name": "Extra Portion",      "price": 50,  "available": true }
+  ],
+
+  "products": [
+
+    {
+      "id": "B001", "name": "Veggie Burger", "category": "Burgers", "subCategory": "Classic Burgers",
+      "description": "Classic veggie patty with fresh lettuce, tomato and our signature sauce",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 1
+    },
+    {
+      "id": "B002", "name": "Tandoori Veggie Burger", "category": "Burgers", "subCategory": "Classic Burgers",
+      "description": "Tandoori spiced veggie patty with mint chutney and crisp vegetables",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 2
+    },
+    {
+      "id": "B003", "name": "Paneer Burger", "category": "Burgers", "subCategory": "Paneer Burgers",
+      "description": "Soft paneer patty with fresh veggies and creamy sauce in a toasted bun",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 3
+    },
+    {
+      "id": "B004", "name": "Tandoori Paneer Burger", "category": "Burgers", "subCategory": "Paneer Burgers",
+      "description": "Tandoori-marinated paneer patty with green chutney and fresh salad",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 4
+    },
+    {
+      "id": "B005", "name": "Paneer Tikka Burger", "category": "Burgers", "subCategory": "Paneer Burgers",
+      "description": "Flavorful paneer tikka with caramelized onions and tandoori sauce",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 5
+    },
+    {
+      "id": "B006", "name": "Potato Cheese Blast Burger", "category": "Burgers", "subCategory": "Special Burgers",
+      "description": "Double cheese with crispy potato patty â€” an explosion of flavor",
+      "price": 189, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 189 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 6
+    },
+    {
+      "id": "B007", "name": "Double Patty Mega Burger", "category": "Burgers", "subCategory": "Special Burgers",
+      "description": "Double stacked patty burger â€” for the serious hunger",
+      "price": 219, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 219 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 7
+    },
+    {
+      "id": "B008", "name": "Burger + Fries + Coke Combo", "category": "Burgers", "subCategory": "Combos",
+      "description": "Any regular burger with crispy fries and chilled Coke",
+      "price": 229, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 229 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 8
+    },
+
+    {
+      "id": "P001", "name": "Margherita Pizza", "category": "Pizza", "subCategory": "Classic",
+      "description": "Classic mozzarella and tomato base with fresh basil",
+      "price": 179, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 179 },
+        { "name": "Medium (9\")", "price": 249 }
+      ],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 9
+    },
+    {
+      "id": "P002", "name": "Golden Corn Pizza", "category": "Pizza", "subCategory": "Classic",
+      "description": "Sweet golden corn with mozzarella on a rich tomato base",
+      "price": 189, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 189 },
+        { "name": "Medium (9\")", "price": 259 }
+      ],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 10
+    },
+    {
+      "id": "P003", "name": "Marmia Italian Pizza", "category": "Pizza", "subCategory": "Classic",
+      "description": "Italian herbs, olives and vegetables on a rich pizza base",
+      "price": 199, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 199 },
+        { "name": "Medium (9\")", "price": 269 }
+      ],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 11
+    },
+    {
+      "id": "P004", "name": "Veg Fiesta Pizza", "category": "Pizza", "subCategory": "Premium",
+      "description": "A fiesta of colourful vegetables and melted cheese",
+      "price": 209, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 209 },
+        { "name": "Medium (9\")", "price": 279 }
+      ],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 12
+    },
+    {
+      "id": "P005", "name": "Veggie Lover Pizza", "category": "Pizza", "subCategory": "Premium",
+      "description": "Loaded with premium garden vegetables and extra mozzarella",
+      "price": 219, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 219 },
+        { "name": "Medium (9\")", "price": 289 }
+      ],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 13
+    },
+    {
+      "id": "P006", "name": "Peppy Paneer Pizza", "category": "Pizza", "subCategory": "Premium",
+      "description": "Spiced paneer cubes with capsicum and tangy pizza sauce",
+      "price": 229, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 229 },
+        { "name": "Medium (9\")", "price": 299 }
+      ],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 14
+    },
+    {
+      "id": "P007", "name": "Indo Masala Paneer Pizza", "category": "Pizza", "subCategory": "Premium",
+      "description": "Desi twist on pizza with masala-marinated paneer and Indian spices",
+      "price": 239, "offerPrice": null,
+      "variants": [
+        { "name": "Regular (7\")", "price": 239 },
+        { "name": "Medium (9\")", "price": 309 }
+      ],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 15
+    },
+
+    {
+      "id": "PA001", "name": "Arrabbiata Pasta", "category": "Pasta", "subCategory": "Classic",
+      "description": "Classic Italian pasta in spicy tomato arrabbiata sauce",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 16
+    },
+    {
+      "id": "PA002", "name": "Alfred Pasta", "category": "Pasta", "subCategory": "Creamy",
+      "description": "Rich and creamy Alfredo sauce with mushrooms and herbs",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 17
+    },
+    {
+      "id": "PA003", "name": "Tomato Cream Pasta", "category": "Pasta", "subCategory": "Creamy",
+      "description": "Pasta in a rich tomato cream sauce with Italian herbs",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 18
+    },
+
+    {
+      "id": "NA001", "name": "Nachos with Cheese", "category": "Nachos", "subCategory": "Classic",
+      "description": "Crispy nachos smothered in warm melted cheese sauce",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 19
+    },
+    {
+      "id": "NA002", "name": "Grand Nachos", "category": "Nachos", "subCategory": "Premium",
+      "description": "Loaded nachos with cheese sauce, jalapeÃ±os, salsa and sour cream",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 20
+    },
+
+    {
+      "id": "F001", "name": "Classic Salted French Fries", "category": "Fries & Garlic Bread", "subCategory": "Fries",
+      "description": "Golden crispy fries with sea salt",
+      "price": 89, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 89 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 21
+    },
+    {
+      "id": "F002", "name": "Cheesy French Fries", "category": "Fries & Garlic Bread", "subCategory": "Fries",
+      "description": "Crispy fries topped with generous melted cheese sauce",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 22
+    },
+    {
+      "id": "F003", "name": "Peri Peri French Fries", "category": "Fries & Garlic Bread", "subCategory": "Fries",
+      "description": "Fries tossed in fiery peri peri spice blend",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 23
+    },
+    {
+      "id": "F004", "name": "Herbed Potato Wedges", "category": "Fries & Garlic Bread", "subCategory": "Fries",
+      "description": "Thick-cut potato wedges seasoned with mixed herbs",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 24
+    },
+    {
+      "id": "F005", "name": "Pizza French Fries", "category": "Fries & Garlic Bread", "subCategory": "Fries",
+      "description": "Fries loaded with pizza sauce and cheese",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 25
+    },
+    {
+      "id": "F006", "name": "Garlic Bread", "category": "Fries & Garlic Bread", "subCategory": "Garlic Bread",
+      "description": "Toasted bread with garlic butter spread",
+      "price": 79, "offerPrice": null,
+      "variants": [
+        { "name": "2 Pcs", "price": 79 },
+        { "name": "4 Pcs", "price": 149 }
+      ],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 26
+    },
+
+    {
+      "id": "BTB001", "name": "Spicy BBQ Sandwich", "category": "Between the Breads", "subCategory": "Grilled Sandwiches",
+      "description": "Toasted sandwich with smoky BBQ sauce and fresh veggies",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 27
+    },
+    {
+      "id": "BTB002", "name": "Pizza Sandwich", "category": "Between the Breads", "subCategory": "Grilled Sandwiches",
+      "description": "Grilled sandwich filled with pizza sauce, cheese and veggies",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 28
+    },
+    {
+      "id": "BTB003", "name": "Veg Mayonnaise Grilled", "category": "Between the Breads", "subCategory": "Grilled Sandwiches",
+      "description": "Grilled sandwich with veggies and creamy mayo",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 29
+    },
+    {
+      "id": "BTB004", "name": "Mumbai Se Aaya Mera Toast", "category": "Between the Breads", "subCategory": "Toast",
+      "description": "Bombay-style masala toast with green chutney and butter",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 30
+    },
+    {
+      "id": "BTB005", "name": "Veg Grilled Sandwich", "category": "Between the Breads", "subCategory": "Grilled Sandwiches",
+      "description": "Classic grilled sandwich with mixed veggies",
+      "price": 99, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 99 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 31
+    },
+    {
+      "id": "BTB006", "name": "Cheese and Chilly Toast", "category": "Between the Breads", "subCategory": "Toast",
+      "description": "Crispy toast with melted cheese and green chillies",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 32
+    },
+    {
+      "id": "BTB007", "name": "Paneer Toast", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Toasted bread with spiced paneer filling",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 33
+    },
+    {
+      "id": "BTB008", "name": "Classic Paneer Sandwich", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Fresh paneer with crisp salad in a soft sandwich",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 34
+    },
+    {
+      "id": "BTB009", "name": "Peri Peri Paneer Sandwich", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Fiery peri peri paneer in a grilled sandwich",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 35
+    },
+    {
+      "id": "BTB010", "name": "Tandoori Paneer Sandwich", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Tandoori marinated paneer in toasted bread with mint chutney",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 36
+    },
+    {
+      "id": "BTB011", "name": "Cheese Paneer Sandwich", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Paneer and cheese loaded toasted sandwich",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 37
+    },
+    {
+      "id": "BTB012", "name": "Schezwan Grilled Paneer", "category": "Between the Breads", "subCategory": "Paneer Specials",
+      "description": "Schezwan-spiced paneer grilled in a toasted sandwich",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 38
+    },
+    {
+      "id": "BTB013", "name": "Paneer Chilli", "category": "Between the Breads", "subCategory": "Starters",
+      "description": "Paneer tossed in chilli garlic sauce â€” dry style",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 39
+    },
+    {
+      "id": "BTB014", "name": "Coleslaw", "category": "Between the Breads", "subCategory": "Sides",
+      "description": "Fresh creamy coleslaw with shredded cabbage and carrots",
+      "price": 79, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 79 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 40
+    },
+
+    {
+      "id": "S001", "name": "Plain Papad", "category": "Starters", "subCategory": "Papads",
+      "description": "Crispy roasted papad â€” plain and simple",
+      "price": 30, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 30 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 41
+    },
+    {
+      "id": "S002", "name": "Masala Papad", "category": "Starters", "subCategory": "Papads",
+      "description": "Crispy papad topped with onion, tomato, coriander and spices",
+      "price": 49, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 49 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 42
+    },
+    {
+      "id": "S003", "name": "Corn Samosa", "category": "Starters", "subCategory": "Samosas",
+      "description": "Crispy golden samosa filled with spiced sweet corn",
+      "price": 59, "offerPrice": null,
+      "variants": [{ "name": "2 Pcs", "price": 59 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 43
+    },
+    {
+      "id": "S004", "name": "Punjabi Samosa", "category": "Starters", "subCategory": "Samosas",
+      "description": "Classic large Punjabi samosa with spiced potato and peas",
+      "price": 49, "offerPrice": null,
+      "variants": [{ "name": "2 Pcs (Small)", "price": 49 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 44
+    },
+    {
+      "id": "S005", "name": "Veg Spring Rolls", "category": "Starters", "subCategory": "Spring Rolls",
+      "description": "Crispy rolls stuffed with seasoned vegetables",
+      "price": 99, "offerPrice": null,
+      "variants": [{ "name": "4 Pcs", "price": 99 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 45
+    },
+    {
+      "id": "S006", "name": "Corn Spring Rolls", "category": "Starters", "subCategory": "Spring Rolls",
+      "description": "Crispy spring rolls filled with sweet corn and cheese",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "4 Pcs", "price": 109 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 46
+    },
+    {
+      "id": "S007", "name": "Smileys", "category": "Starters", "subCategory": "Potato Items",
+      "description": "Smiley-face potato snacks â€” golden and crispy",
+      "price": 99, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 99 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 47
+    },
+    {
+      "id": "S008", "name": "Onion Rings", "category": "Starters", "subCategory": "Potato Items",
+      "description": "Golden battered onion rings â€” crispy outside, tender inside",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 48
+    },
+    {
+      "id": "S009", "name": "Pizza Pockets", "category": "Starters", "subCategory": "Cheese Items",
+      "description": "Pockets stuffed with pizza sauce and melted mozzarella",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 49
+    },
+    {
+      "id": "S010", "name": "Potato Cheese Shots", "category": "Starters", "subCategory": "Cheese Items",
+      "description": "Crispy potato bites oozing with melted cheese",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 50
+    },
+    {
+      "id": "S011", "name": "Cheese Corn Balls", "category": "Starters", "subCategory": "Cheese Items",
+      "description": "Golden balls of corn and cheese with a crispy coating",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 51
+    },
+    {
+      "id": "S012", "name": "Hot Cheesy Vegetable Logs", "category": "Starters", "subCategory": "Cheese Items",
+      "description": "Crispy vegetable logs filled with spiced veggies and cheese",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": true, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 52
+    },
+    {
+      "id": "S013", "name": "Crispy Corn", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Golden crispy corn kernels tossed in seasoning",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 53
+    },
+    {
+      "id": "S014", "name": "Chilli Potato", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Crispy potatoes tossed in tangy chilli sauce",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 54
+    },
+    {
+      "id": "S015", "name": "Honey Chilli Potato", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Crispy potatoes glazed with sweet honey chilli sauce",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 55
+    },
+    {
+      "id": "S016", "name": "Baby Corn Manchurian", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Baby corn in tangy Manchurian sauce",
+      "price": 149, "offerPrice": null,
+      "variants": [
+        { "name": "Dry", "price": 149 },
+        { "name": "Wet", "price": 149 }
+      ],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 56
+    },
+    {
+      "id": "S017", "name": "Manchurian", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Classic veg balls in spicy Manchurian sauce",
+      "price": 149, "offerPrice": null,
+      "variants": [
+        { "name": "Dry", "price": 149 },
+        { "name": "Wet", "price": 149 }
+      ],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 57
+    },
+    {
+      "id": "S018", "name": "Paneer Chilly", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Soft paneer cubes tossed in fiery chilli sauce",
+      "price": 169, "offerPrice": null,
+      "variants": [
+        { "name": "Dry", "price": 169 },
+        { "name": "Wet", "price": 169 }
+      ],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 58
+    },
+    {
+      "id": "S019", "name": "Chilli Babycorn", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Crunchy baby corn in chilli sauce",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 59
+    },
+    {
+      "id": "S020", "name": "Veg 65", "category": "Starters", "subCategory": "Indian Starters",
+      "description": "Spicy crispy veg 65 â€” a South Indian classic",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 60
+    },
+    {
+      "id": "S021", "name": "Indo Chinese Paneer Chilly", "category": "Starters", "subCategory": "Chinese Starters",
+      "description": "Paneer in Indo-Chinese style chilli sauce with bell peppers",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 61
+    },
+    {
+      "id": "S022", "name": "Barbecue Paneer Satay", "category": "Starters", "subCategory": "Indian Starters",
+      "description": "Grilled paneer skewers with smoky BBQ marinade",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 62
+    },
+    {
+      "id": "S023", "name": "Paneer 65", "category": "Starters", "subCategory": "Indian Starters",
+      "description": "Crispy spiced paneer 65 â€” bold flavours",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 63
+    },
+    {
+      "id": "S024", "name": "Paneer Majestic", "category": "Starters", "subCategory": "Indian Starters",
+      "description": "Paneer majestic â€” a Hyderabadi favourite with spicy masala coating",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 64
+    },
+
+    {
+      "id": "M001", "name": "Veg Fried Momos", "category": "Momos", "subCategory": "Veg Momos",
+      "description": "Delicious 6-piece veg momos â€” choose steamed or fried with chilli dip",
+      "price": 149, "offerPrice": null,
+      "variants": [
+        { "name": "Steamed", "price": 149 },
+        { "name": "Fried", "price": 159 }
+      ],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 65
+    },
+    {
+      "id": "M002", "name": "Paneer Fried Momos", "category": "Momos", "subCategory": "Paneer Momos",
+      "description": "Premium 6-piece paneer momos â€” choose steamed or fried with chilli dip",
+      "price": 159, "offerPrice": null,
+      "variants": [
+        { "name": "Steamed", "price": 159 },
+        { "name": "Fried", "price": 169 }
+      ],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 66
+    },
+
+    {
+      "id": "MC001", "name": "Hakka Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Classic wok-tossed Hakka noodles with vegetables",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 67
+    },
+    {
+      "id": "MC002", "name": "Spl. Veg Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Special veg noodles with premium vegetables and sauces",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 68
+    },
+    {
+      "id": "MC003", "name": "Schezwan Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Spicy schezwan sauce noodles with fresh vegetables",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 69
+    },
+    {
+      "id": "MC004", "name": "Paneer Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Noodles with soft paneer cubes and sauces",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 70
+    },
+    {
+      "id": "MC005", "name": "Chilly Garlic Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Noodles tossed in fiery chilly garlic sauce",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 71
+    },
+    {
+      "id": "MC006", "name": "Schezwan Paneer Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Spicy schezwan noodles with paneer and vegetables",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 72
+    },
+    {
+      "id": "MC007", "name": "Thai Chilly Basil Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Thai-style noodles with fresh basil and chilli",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 73
+    },
+    {
+      "id": "MC008", "name": "Singapore Noodles", "category": "Main Course", "subCategory": "Noodles",
+      "description": "Singapore-style noodles with curry powder and vegetables",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 1,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 74
+    },
+    {
+      "id": "MC009", "name": "Jeera Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Fragrant basmati rice tempered with cumin",
+      "price": 99, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 99 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 75
+    },
+    {
+      "id": "MC010", "name": "Pudina Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Aromatic mint-flavoured basmati rice",
+      "price": 109, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 109 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 76
+    },
+    {
+      "id": "MC011", "name": "Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Wok-tossed veg fried rice with soy sauce",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 77
+    },
+    {
+      "id": "MC012", "name": "Schezwan Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Spicy schezwan fried rice â€” bold and flavorful",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 78
+    },
+    {
+      "id": "MC013", "name": "Paneer Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Fried rice with paneer cubes and vegetables",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 79
+    },
+    {
+      "id": "MC014", "name": "Spl. Veg Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Special fried rice with a premium mix of vegetables",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 80
+    },
+    {
+      "id": "MC015", "name": "Schezwan Paneer Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Schezwan fried rice with tender paneer pieces",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 81
+    },
+    {
+      "id": "MC016", "name": "Cashew Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Fried rice with roasted cashews and vegetables",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 82
+    },
+    {
+      "id": "MC017", "name": "Corn & Capsicum Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Fried rice with sweet corn and colourful capsicum",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 83
+    },
+    {
+      "id": "MC018", "name": "Thai Basil Chilly Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Thai-inspired fried rice with fragrant basil and chilli",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": false, "spicyLevel": 2,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 84
+    },
+    {
+      "id": "MC019", "name": "SPL. Paneer Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Special paneer fried rice with premium ingredients",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 85
+    },
+    {
+      "id": "MC020", "name": "SPL. Kaju Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Special cashew fried rice â€” rich and aromatic",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 86
+    },
+    {
+      "id": "MC021", "name": "SPL. Kaju Paneer Fried Rice", "category": "Main Course", "subCategory": "Rice",
+      "description": "Special cashew and paneer fried rice â€” the premium choice",
+      "price": 199, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 199 }],
+      "jainAvailable": false, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 87
+    },
+
+    {
+      "id": "SH001", "name": "Butterscotch Milkshake", "category": "Milkshakes", "subCategory": "Classic Shakes",
+      "description": "Creamy butterscotch milkshake with premium ice cream",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 88
+    },
+    {
+      "id": "SH002", "name": "Strawberry Milkshake", "category": "Milkshakes", "subCategory": "Classic Shakes",
+      "description": "Fresh strawberry milkshake with real fruit",
+      "price": 119, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 119 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 89
+    },
+    {
+      "id": "SH003", "name": "Oreo Milkshake", "category": "Milkshakes", "subCategory": "Cookie Shakes",
+      "description": "Rich milkshake blended with Oreo cookies and cream",
+      "price": 129, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 129 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 90
+    },
+    {
+      "id": "SH004", "name": "KitKat Milkshake", "category": "Milkshakes", "subCategory": "Cookie Shakes",
+      "description": "Decadent milkshake blended with KitKat chocolate wafer",
+      "price": 139, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 139 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 91
+    },
+    {
+      "id": "SH005", "name": "Brownie Milkshake", "category": "Milkshakes", "subCategory": "Cookie Shakes",
+      "description": "Luscious chocolate brownie milkshake â€” indulgent and rich",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 92
+    },
+
+    {
+      "id": "TS001", "name": "Butterscotch Thickshake", "category": "Thickshakes", "subCategory": "Classic Thickshakes",
+      "description": "Super thick and creamy butterscotch thickshake",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 93
+    },
+    {
+      "id": "TS002", "name": "Strawberry Thickshake", "category": "Thickshakes", "subCategory": "Classic Thickshakes",
+      "description": "Super thick strawberry shake with real fruit purÃ©e",
+      "price": 149, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 149 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 94
+    },
+    {
+      "id": "TS003", "name": "Oreo Thickshake", "category": "Thickshakes", "subCategory": "Cookie Thickshakes",
+      "description": "Extra thick Oreo thickshake â€” loaded with cookie pieces",
+      "price": 159, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 159 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": true,
+      "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 95
+    },
+    {
+      "id": "TS004", "name": "KitKat Thickshake", "category": "Thickshakes", "subCategory": "Cookie Thickshakes",
+      "description": "Loaded KitKat thickshake â€” thick, creamy and chocolatey",
+      "price": 169, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 169 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 96
+    },
+    {
+      "id": "TS005", "name": "Brownie Thickshake", "category": "Thickshakes", "subCategory": "Cookie Thickshakes",
+      "description": "Thick indulgent brownie shake â€” the ultimate dessert drink",
+      "price": 179, "offerPrice": null,
+      "variants": [{ "name": "Regular", "price": 179 }],
+      "jainAvailable": true, "spicyLevel": 0,
+      "available": true, "featured": false,
+      "imageURL": "https://images.unsplash.com/photo-1572490122747-3e9e12a58b84?w=600&auto=format&fit=crop&q=80",
+      "displayOrder": 97
+    }
+
+  ]
+}
+;

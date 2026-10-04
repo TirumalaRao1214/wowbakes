@@ -1,0 +1,441 @@
+/* ============================================================
+   WOW BAKES — Responsive Stylesheet
+   All breakpoint overrides, mobile-first
+   Breakpoints: 360, 480, 640, 768, 1024, 1280, 1440+
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Base Mobile-First Adjustments (all screens up to 768px)
+   ---------------------------------------------------------- */
+
+/* Show mobile bottom nav */
+@media (max-width: 767px) {
+  .mobile-bottom-nav {
+    display: block;
+  }
+
+  /* Hide desktop nav links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Smaller nav height */
+  .site-header {
+    height: 56px;
+  }
+
+  :root {
+    --nav-height: 56px;
+  }
+
+  /* Hero: single column */
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-block: var(--space-10);
+    gap: var(--space-8);
+  }
+
+  .hero-image-wrap {
+    order: -1;
+  }
+
+  .hero-image-frame {
+    aspect-ratio: 16/9;
+    border-radius: var(--radius-xl);
+    max-width: 100%;
+  }
+
+  .hero-headline {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .hero-float-1,
+  .hero-float-2 {
+    display: none;
+  }
+
+  .hero-stats {
+    gap: var(--space-6);
+  }
+
+  /* Category grid: 2 columns on mobile */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  /* Product grid: 2 columns on mobile */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  /* Section spacing tighter on mobile */
+  .section {
+    padding-block: var(--space-10);
+  }
+
+  .section-header h2 {
+    font-size: var(--text-3xl);
+  }
+
+  /* About strip: single column */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer: single column */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Menu layout: no sidebar */
+  .menu-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-sidebar {
+    display: none;
+  }
+
+  /* Cart item: simplified layout */
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-3);
+  }
+
+  .cart-item-price {
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: var(--text-lg);
+  }
+
+  /* Contact section: single column */
+  #contact .container > div {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Cart page: single column */
+  .cart-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cart-summary-card {
+    position: static;
+  }
+
+  /* Product modal: full-screen on mobile */
+  .product-modal {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .product-modal-inner {
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    max-height: 92svh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .modal-image-wrap {
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    aspect-ratio: 4/3;
+  }
+
+  /* Toast: left aligned on mobile */
+  .toast-container {
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: calc(var(--mobile-nav-height) + var(--space-4));
+  }
+
+  .toast {
+    width: 100%;
+  }
+
+  /* Order type group */
+  .order-type-group {
+    gap: var(--space-2);
+  }
+
+  /* Larger product card text */
+  .product-card-name {
+    font-size: var(--text-sm);
+  }
+
+  .product-card-price-current {
+    font-size: var(--text-base);
+  }
+
+  .product-card-add {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* CTA banner */
+  .cta-banner h2 {
+    font-size: var(--text-3xl);
+  }
+
+  /* Page banner */
+  .page-banner h1 {
+    font-size: var(--text-3xl);
+  }
+
+  /* Hero CTA stack on small screens */
+  .hero-ctas {
+    flex-direction: column;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ----------------------------------------------------------
+   Small Mobile (360px)
+   ---------------------------------------------------------- */
+@media (max-width: 400px) {
+  :root {
+    --container-gutter: var(--space-4);
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .category-pill {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
+  }
+
+  .modal-body {
+    padding: var(--space-4);
+  }
+
+  .modal-cta-bar {
+    padding: var(--space-4);
+  }
+}
+
+/* ----------------------------------------------------------
+   Medium Mobile (480px)
+   ---------------------------------------------------------- */
+@media (min-width: 480px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-ctas {
+    flex-direction: row;
+  }
+
+  .hero-ctas .btn {
+    width: auto;
+  }
+}
+
+/* ----------------------------------------------------------
+   Tablet Portrait (640px)
+   ---------------------------------------------------------- */
+@media (min-width: 640px) and (max-width: 767px) {
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-image-frame {
+    max-width: 480px;
+    margin-inline: auto;
+  }
+}
+
+/* ----------------------------------------------------------
+   Tablet (768px)
+   ---------------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Cart layout: 2 column */
+  .cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  /* 3-col product grid */
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Category grid: 3 cols */
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* About: 2 cols */
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer: 2 cols */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* ----------------------------------------------------------
+   Tablet Landscape / Small Desktop (1024px)
+   ---------------------------------------------------------- */
+@media (min-width: 1024px) {
+  /* Show desktop nav, hide hamburger */
+  .nav-links {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  /* Hide mobile bottom nav */
+  .mobile-bottom-nav {
+    display: none;
+  }
+
+  body.has-bottom-nav {
+    padding-bottom: 0;
+  }
+
+  /* Hero: 2 column restored */
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100svh - var(--nav-height));
+    padding-block: var(--space-20);
+  }
+
+  .hero-image-wrap {
+    order: unset;
+  }
+
+  .hero-float-1,
+  .hero-float-2 {
+    display: flex;
+  }
+
+  /* Hero headline full size */
+  .hero-headline {
+    font-size: var(--text-5xl);
+  }
+
+  /* About strip: 2 columns */
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  /* Menu layout: sidebar visible */
+  .menu-layout {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .menu-sidebar {
+    display: block;
+  }
+
+  /* Product grid: 3 cols in menu */
+  .menu-main .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer: 3 cols */
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  }
+
+  /* Categories: 4 cols */
+  .categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Cart: fixed summary */
+  .cart-summary-card {
+    position: sticky;
+    top: calc(var(--nav-height) + var(--space-4));
+  }
+}
+
+/* ----------------------------------------------------------
+   Large Desktop (1280px)
+   ---------------------------------------------------------- */
+@media (min-width: 1280px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .menu-main .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-headline {
+    font-size: var(--text-6xl);
+  }
+
+  .section {
+    padding-block: var(--space-20);
+  }
+}
+
+/* ----------------------------------------------------------
+   Extra-Large (1440px+)
+   ---------------------------------------------------------- */
+@media (min-width: 1440px) {
+  :root {
+    --container-gutter: var(--space-8);
+  }
+
+  .display-text {
+    font-size: 4.5rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   Print Styles
+   ---------------------------------------------------------- */
+@media print {
+  .site-header,
+  .mobile-bottom-nav,
+  .hero-float-card,
+  .nav-actions,
+  .hero-ctas .btn-whatsapp {
+    display: none;
+  }
+}
