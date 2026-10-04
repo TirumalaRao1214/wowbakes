@@ -14,19 +14,19 @@ const CONFIG = {
   // ── WhatsApp ───────────────────────────────────────────────────────
   // Format: country code + number, no spaces, no +, no dashes
   // Example: "919876543210" for India +91 9876543210
-  WHATSAPP_NUMBER: '91XXXXXXXXXX',
+  WHATSAPP_NUMBER: '919966864859',
 
   // ── Business Information ───────────────────────────────────────────
   BUSINESS_NAME:    'WOW BAKES',
   BUSINESS_TAGLINE: 'Freshly Baked. Deliciously Made.',
-  BUSINESS_ADDRESS: 'Your Street Address, City, State - Pincode',
-  BUSINESS_PHONE:   '+91 XXXX-XXXXXX',
+  BUSINESS_ADDRESS: '9/1, D.no. 6-9-18, Arundelpet, Opp. IndusInd Bank, Guntur - 522004, Andhra Pradesh',
+  BUSINESS_PHONE:   '+91 99668 64859',
   BUSINESS_EMAIL:   'info@wowbakes.in',
 
   // ── Social Media ───────────────────────────────────────────────────
-  INSTAGRAM_URL:    'https://instagram.com/wowbakes',
+  INSTAGRAM_URL:    'https://www.instagram.com/wowbakes_guntur/',
   FACEBOOK_URL:     '',
-  GOOGLE_MAPS_URL:  'https://maps.google.com/?q=WOW+BAKES',
+  GOOGLE_MAPS_URL:  'https://maps.google.com/?q=WOW+BAKES+Arundelpet+Guntur',
 
   // ── Hours ──────────────────────────────────────────────────────────
   OPENING_HOURS:    'Mon – Sun: 10:00 AM – 10:30 PM',
