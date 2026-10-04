@@ -33,28 +33,33 @@
     --nav-height: 56px;
   }
 
-  /* Hero: single column */
+  /* Hero: single column, image first */
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-block: var(--space-10);
-    gap: var(--space-8);
+    padding: 24px 20px 40px;
+    gap: var(--space-6);
   }
 
   .hero-image-wrap {
     order: -1;
+    padding-inline: 0;
   }
 
   .hero-image-frame {
-    aspect-ratio: 16/9;
-    border-radius: var(--radius-xl);
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 28px;
     max-width: 100%;
   }
 
   .hero-headline {
-    font-size: clamp(2rem, 8vw, 2.5rem);
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 0.97;
   }
 
+  /* Hide floating decorative badges on mobile — prevent overflow */
   .hero-float-1,
   .hero-float-2 {
     display: none;
@@ -62,6 +67,23 @@
 
   .hero-stats {
     gap: var(--space-6);
+  }
+
+  /* Mobile buttons: stack vertically, full width */
+  .hero-ctas {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  /* Hide "Order Now" desktop button on mobile */
+  .nav-order-btn {
+    display: none;
   }
 
   /* Category grid: 2 columns on mobile */
@@ -194,15 +216,6 @@
     font-size: var(--text-3xl);
   }
 
-  /* Hero CTA stack on small screens */
-  .hero-ctas {
-    flex-direction: column;
-  }
-
-  .hero-ctas .btn {
-    width: 100%;
-    justify-content: center;
-  }
 }
 
 /* ----------------------------------------------------------
@@ -246,14 +259,6 @@
 @media (min-width: 480px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-ctas {
-    flex-direction: row;
-  }
-
-  .hero-ctas .btn {
-    width: auto;
   }
 }
 
@@ -312,7 +317,7 @@
 /* ----------------------------------------------------------
    Tablet Landscape / Small Desktop (1024px)
    ---------------------------------------------------------- */
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   /* Show desktop nav, hide hamburger */
   .nav-links {
     display: flex;
@@ -320,6 +325,11 @@
 
   .hamburger-btn {
     display: none;
+  }
+
+  /* Show "Order Now" button */
+  .nav-order-btn {
+    display: inline-flex;
   }
 
   /* Hide mobile bottom nav */
@@ -331,15 +341,27 @@
     padding-bottom: 0;
   }
 
-  /* Hero: 2 column restored */
+  /* Hero: 2-column, fits within first viewport */
   .hero {
     grid-template-columns: 1fr 1fr;
     min-height: calc(100svh - var(--nav-height));
-    padding-block: var(--space-20);
+    max-height: calc(100svh - var(--nav-height));
+    padding-block: var(--space-16);
+    padding-inline: var(--space-8);
+    gap: var(--space-12);
   }
 
   .hero-image-wrap {
     order: unset;
+    padding-inline: var(--space-4);
+  }
+
+  .hero-image-frame {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-2xl);
+    margin-inline: auto;
   }
 
   .hero-float-1,
@@ -347,9 +369,22 @@
     display: flex;
   }
 
-  /* Hero headline full size */
+  /* Hero headline: desktop clamp */
   .hero-headline {
-    font-size: var(--text-5xl);
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
+    line-height: 1.0;
+  }
+
+  /* Desktop buttons: side-by-side */
+  .hero-ctas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .hero-ctas .btn {
+    width: auto;
+    max-width: none;
   }
 
   /* About strip: 2 columns */
@@ -405,8 +440,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Hero: constrain max-width on very large screens */
+  .hero {
+    padding-inline: max(var(--space-8), calc((100vw - 1280px) / 2 + var(--space-8)));
+  }
+
   .hero-headline {
-    font-size: var(--text-6xl);
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
   }
 
   .section {

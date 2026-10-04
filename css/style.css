@@ -132,6 +132,8 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -142,6 +144,7 @@ body {
   background-color: var(--cream-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -295,6 +298,11 @@ p {
   gap: var(--space-3);
   flex-shrink: 0;
   text-decoration: none;
+}
+
+/* Order Now button: hidden on mobile, shown on desktop via responsive.css */
+.nav-order-btn {
+  display: none;
 }
 
 .nav-logo-img {
@@ -505,15 +513,16 @@ p {
    7. Hero Section
    ---------------------------------------------------------- */
 .hero {
-  min-height: calc(100svh - var(--nav-height));
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: var(--space-12);
-  padding-block: var(--space-16);
+  gap: var(--space-8);
+  padding: 24px 20px 40px;
   background: linear-gradient(135deg, var(--cream-light) 0%, var(--orange-subtle) 100%);
   overflow: hidden;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero::before {
@@ -533,6 +542,7 @@ p {
   gap: var(--space-6);
   position: relative;
   z-index: 1;
+  min-width: 0;
 }
 
 .hero-label {
@@ -559,10 +569,10 @@ p {
 
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, var(--text-6xl));
+  font-size: clamp(2.8rem, 12vw, 4rem);
   font-weight: 900;
   color: var(--brown-deep);
-  line-height: 1.05;
+  line-height: 0.97;
   letter-spacing: -0.02em;
 }
 
@@ -580,8 +590,13 @@ p {
 
 .hero-ctas {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-ctas .btn {
+  width: 100%;
+  justify-content: center;
 }
 
 .hero-stats {
@@ -622,9 +637,8 @@ p {
 
 .hero-image-frame {
   width: 100%;
-  max-width: 560px;
-  aspect-ratio: 4/5;
-  border-radius: var(--radius-2xl);
+  aspect-ratio: 16 / 10;
+  border-radius: 28px;
   overflow: hidden;
   box-shadow: var(--shadow-xl);
   position: relative;
@@ -704,12 +718,12 @@ p {
 
 .hero-float-1 {
   top: 15%;
-  right: -5%;
+  right: 4%;
 }
 
 .hero-float-2 {
   bottom: 30%;
-  right: -8%;
+  right: 4%;
 }
 
 /* ----------------------------------------------------------
