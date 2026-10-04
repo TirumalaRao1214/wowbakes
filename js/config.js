@@ -28,14 +28,13 @@ const CONFIG = {
   WEBSITE_URL:      'https://wowbakes.in',
 
   // ── Geo Coordinates (for structured data) ─────────────────────────
-  // Find yours at: https://maps.google.com → right-click your location → "What's here?"
-  LATITUDE:         '16.3067',   // WOW BAKES, Arundelpet, Guntur
-  LONGITUDE:        '80.4365',
+  LATITUDE:         '16.3040652',
+  LONGITUDE:        '80.4384351',
 
   // ── Social Media ───────────────────────────────────────────────────
   INSTAGRAM_URL:    'https://www.instagram.com/wowbakes_guntur/',
   FACEBOOK_URL:     '',
-  GOOGLE_MAPS_URL:  'https://maps.google.com/?q=WOW+BAKES+Arundelpet+Guntur',
+  GOOGLE_MAPS_URL:  'https://www.google.com/maps/place/WOW+BAKES+(MINI+CAKE+STUDIO)/@16.3040652,80.4384351,17z',
 
   // ── Hours ──────────────────────────────────────────────────────────
   OPENING_HOURS:    'Mon – Sun: 10:00 AM – 10:30 PM',

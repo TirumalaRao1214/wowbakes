@@ -149,6 +149,11 @@
     grid-template-columns: 1fr !important;
   }
 
+  /* Map: shorter on mobile */
+  .contact-map-wrap {
+    height: 240px;
+  }
+
   /* Cart page: single column */
   .cart-layout {
     grid-template-columns: 1fr !important;

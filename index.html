@@ -54,8 +54,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "16.3067",
-      "longitude": "80.4365"
+      "latitude": "16.3040652",
+      "longitude": "80.4384351"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -374,13 +374,27 @@
               Chat on WhatsApp
             </a>
           </div>
-          <div class="reveal reveal-delay-2" style="border-radius:var(--radius-xl); overflow:hidden; height:300px; background:var(--grey-light); display:flex; align-items:center; justify-content:center; color:var(--grey-text);">
-            <!-- Replace with Google Maps embed -->
-            <div style="text-align:center; padding: 2rem;">
-              <div style="font-size:40px; margin-bottom:1rem;">📍</div>
-              <p style="color:var(--grey-text);">Map coming soon</p>
-              <p style="font-size:0.8rem; color:var(--grey-text); margin-top:0.5rem;">Add Google Maps embed in index.html</p>
-            </div>
+          <div class="contact-map-wrap reveal reveal-delay-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.4!2d80.4384351!3d16.3040652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75ae02f1e5cd%3A0x58f1f8e0e0b3f318!2sWOW%20BAKES%20(MINI%20CAKE%20STUDIO)!5e0!3m2!1sen!2sin!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="WOW BAKES location on Google Maps"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps/place/WOW+BAKES+(MINI+CAKE+STUDIO)/@16.3040652,80.4384351,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-map-directions"
+              aria-label="Get directions to WOW BAKES on Google Maps"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Get Directions
+            </a>
           </div>
         </div>
       </div>

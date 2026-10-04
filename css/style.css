@@ -971,6 +971,45 @@ p {
   color: var(--orange-light);
 }
 
+/* Contact map */
+.contact-map-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  height: 320px;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-map-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-map-directions {
+  position: absolute;
+  bottom: var(--space-4);
+  right: var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--white);
+  color: var(--burnt-orange);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  transition: var(--t-base);
+}
+
+.contact-map-directions:hover {
+  background: var(--burnt-orange);
+  color: var(--white);
+}
+
 .footer-divider {
   height: 1px;
   background: rgba(238, 224, 204, 0.1);
