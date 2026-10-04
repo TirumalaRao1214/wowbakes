@@ -1,0 +1,31 @@
+﻿# ── Credentials & secrets — NEVER commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+credentials*.json
+*-credentials.json
+*_credentials.json
+client_secret*.json
+token.json
+secrets/
+
+# ── Node / package managers
+node_modules/
+npm-debug.log*
+
+# ── OS files
+.DS_Store
+Thumbs.db
+
+# ── Editor / IDE
+.idea/
+*.suo
+*.user
+
+# ── Build output
+dist/
+build/

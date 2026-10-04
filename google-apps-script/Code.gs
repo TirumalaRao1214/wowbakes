@@ -19,10 +19,16 @@
  */
 
 // ──────────────────────────────────────────────────────────────────────────────
-// CONFIGURATION — Update SPREADSHEET_ID with your Google Sheet ID
+// CONFIGURATION
+// IMPORTANT: This file lives inside Google Apps Script, NOT the public website.
+// The SPREADSHEET_ID below is used only server-side. It is never sent to the
+// browser. The public API URL (in js/config.js) is separate and read-only.
+//
+// NOTE: If this Code.gs file is committed to a public git repository,
+// rotate the Google Sheet ID (File → Share → Change) and update here.
 // ──────────────────────────────────────────────────────────────────────────────
 
-var SPREADSHEET_ID = '13fNPq1la__RRQpeYWmq1BQ6uSmVKArMOYQRUU-A5d6o';  // ← REPLACE THIS
+var SPREADSHEET_ID = '13fNPq1la__RRQpeYWmq1BQ6uSmVKArMOYQRUU-A5d6o';
 
 var SHEETS = {
   PRODUCTS:   'Products',
@@ -40,25 +46,32 @@ var SHEETS = {
  * Returns JSON with CORS headers so the website can fetch it from any domain.
  */
 function doGet(e) {
-  var action = (e && e.parameter && e.parameter.action) ? e.parameter.action : 'all';
+  // Only allow the four known read-only actions — reject everything else
+  var ALLOWED_ACTIONS = { products: true, categories: true, addons: true, all: true };
+  var action = (e && e.parameter && e.parameter.action) ? String(e.parameter.action) : 'all';
+
+  if (!ALLOWED_ACTIONS[action]) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ error: 'Invalid request' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 
   var result;
   try {
     if      (action === 'products')    result = { products:   getProducts() };
     else if (action === 'categories')  result = { categories: getCategories() };
     else if (action === 'addons')      result = { addons:     getAddOns() };
-    else if (action === 'all') {
+    else {
       result = {
         products:   getProducts(),
         categories: getCategories(),
         addons:     getAddOns(),
       };
-    } else {
-      result = { error: 'Unknown action: ' + action };
     }
   } catch (err) {
-    result = { error: err.message, stack: err.stack };
-    Logger.log('WOW BAKES API Error: ' + err.message);
+    // Log full error internally — NEVER expose stack traces or internals to the client
+    Logger.log('WOW BAKES API Error: ' + err.message + '\n' + err.stack);
+    result = { error: 'Menu data temporarily unavailable. Please try again later.' };
   }
 
   return ContentService

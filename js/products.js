@@ -373,11 +373,13 @@
     const variants   = product.variants || [{ name: 'Regular', price: product.price }];
     _selectedVariant = variants[0];
 
-    // Image
+    // Image — validate URL before assigning to src
     const img = document.getElementById('modal-image');
+    const FALLBACK = 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80';
     if (img) {
-      img.src = product.imageURL || 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80';
-      img.alt = product.name;
+      const rawSrc = product.imageURL;
+      img.src = (typeof rawSrc === 'string' && rawSrc.startsWith('https://')) ? rawSrc : FALLBACK;
+      img.alt = _escHtml(product.name) + ' at WOW BAKES';
     }
 
     // Name & description
@@ -584,7 +586,16 @@
   function _updateResultsInfo() {
     const info = document.getElementById('results-info');
     if (!info) return;
-    info.innerHTML = `Showing <strong id="results-count">${_filtered.length}</strong> items`;
+    // Use DOM API — _filtered.length is always a safe integer
+    info.textContent = '';
+    const prefix = document.createTextNode('Showing ');
+    const strong = document.createElement('strong');
+    strong.id = 'results-count';
+    strong.textContent = _filtered.length;
+    const suffix = document.createTextNode(' items');
+    info.appendChild(prefix);
+    info.appendChild(strong);
+    info.appendChild(suffix);
   }
 
   /* ────────────────────────────────────────────────────────

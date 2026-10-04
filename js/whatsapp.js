@@ -14,39 +14,73 @@
   const itemsList    = document.getElementById('cart-items-list');
   const orderType    = () => document.querySelector('input[name="order-type"]:checked')?.value || 'pickup';
 
+  /* ── Escape HTML for safe innerHTML injection ────────────── */
+  function _esc(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* ── Validate image URL — only allow https:// ────────────── */
+  const FALLBACK_IMG = 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&auto=format&fit=crop&q=80';
+  function _safeImgSrc(url) {
+    if (typeof url === 'string' && url.startsWith('https://')) return url;
+    return FALLBACK_IMG;
+  }
+
+  /* ── Validate & clamp a cart item from localStorage ─────── */
+  function _validateItem(item) {
+    return {
+      id:          String(item.id          || '').slice(0, 50),
+      name:        String(item.name        || '').slice(0, 120),
+      category:    String(item.category    || '').slice(0, 60),
+      variantName: String(item.variantName || '').slice(0, 60),
+      price:       Math.max(0, Math.min(99999, Number(item.price) || 0)),
+      quantity:    Math.max(1, Math.min(99,  Math.floor(Number(item.quantity) || 1))),
+      addOns:      Array.isArray(item.addOns) ? item.addOns.map(a => ({
+        name:  String(a.name  || '').slice(0, 60),
+        price: Math.max(0, Math.min(9999, Number(a.price) || 0)),
+      })) : [],
+      image:       item.image || '',
+    };
+  }
+
   /* ── Render a cart item row ──────────────────────────────── */
-  function _renderCartItem(item) {
-    const addOnTotal = (item.addOns || []).reduce((s, a) => s + (a.price || 0), 0);
+  function _renderCartItem(rawItem) {
+    const item = _validateItem(rawItem);
+
+    const addOnTotal = item.addOns.reduce((s, a) => s + a.price, 0);
     const linePrice  = (item.price + addOnTotal) * item.quantity;
 
-    const addOnText = item.addOns && item.addOns.length > 0
-      ? `<div class="cart-item-addons">+ ${item.addOns.map(a => a.name).join(', ')}</div>`
+    const addOnText = item.addOns.length > 0
+      ? `<div class="cart-item-addons">+ ${item.addOns.map(a => _esc(a.name)).join(', ')}</div>`
       : '';
 
     const variantText = item.variantName
-      ? `<div class="cart-item-variant">${item.variantName}</div>`
+      ? `<div class="cart-item-variant">${_esc(item.variantName)}</div>`
       : '';
 
-    const imgSrc = item.image
-      || 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&auto=format&fit=crop&q=80';
+    const imgSrc = _safeImgSrc(item.image);
 
     return `
       <div
         class="cart-item"
-        data-id="${item.id}"
-        data-variant="${item.variantName || ''}"
+        data-id="${_esc(item.id)}"
+        data-variant="${_esc(item.variantName)}"
       >
         <div class="cart-item-image">
           <img
-            src="${imgSrc}"
-            alt="${item.name}"
+            src="${_esc(imgSrc)}"
+            alt="${_esc(item.name)}"
             loading="lazy"
             width="100" height="80"
-            onerror="this.src='https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&auto=format&fit=crop&q=80'"
+            onerror="this.src='${FALLBACK_IMG}'"
           >
         </div>
         <div>
-          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-name">${_esc(item.name)}</div>
           ${variantText}
           ${addOnText}
           <div class="cart-item-controls">
@@ -54,19 +88,19 @@
               <button
                 class="cart-qty-btn"
                 data-action="decrease"
-                aria-label="Decrease quantity of ${item.name}"
+                aria-label="Decrease quantity of ${_esc(item.name)}"
               >−</button>
               <span class="cart-qty-value" aria-live="polite">${item.quantity}</span>
               <button
                 class="cart-qty-btn"
                 data-action="increase"
-                aria-label="Increase quantity of ${item.name}"
+                aria-label="Increase quantity of ${_esc(item.name)}"
               >+</button>
             </div>
             <button
               class="cart-item-remove"
               data-action="remove"
-              aria-label="Remove ${item.name} from cart"
+              aria-label="Remove ${_esc(item.name)} from cart"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
             </button>

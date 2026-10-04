@@ -173,12 +173,23 @@ function showToast(message, type = 'info') {
   const container = document.getElementById('toast-container');
   if (!container) return;
 
+  const iconMap = { success: '✓', error: '✕' };
+  const icon = iconMap[type] || 'ℹ';
+
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
-  toast.innerHTML = `
-    <span class="toast-icon" aria-hidden="true">${type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ'}</span>
-    <span>${message}</span>
-  `;
+
+  // Build with DOM APIs — never inject untrusted content via innerHTML
+  const iconSpan = document.createElement('span');
+  iconSpan.className = 'toast-icon';
+  iconSpan.setAttribute('aria-hidden', 'true');
+  iconSpan.textContent = icon;
+
+  const msgSpan = document.createElement('span');
+  msgSpan.textContent = message;
+
+  toast.appendChild(iconSpan);
+  toast.appendChild(msgSpan);
   container.appendChild(toast);
 
   // Trigger animation

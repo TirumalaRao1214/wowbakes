@@ -45,14 +45,26 @@
     });
   }
 
+  /* ── Escape HTML for safe injection into innerHTML ──────── */
+  function _esc(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  /* ── Validate image URL — only allow https:// ────────────── */
+  const FALLBACK_IMG = 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80';
+  function _safeImgSrc(url) {
+    if (typeof url === 'string' && url.startsWith('https://')) return url;
+    return FALLBACK_IMG;
+  }
+
   /* ── Build product card HTML ─────────────────────────────── */
   function buildProductCard(product) {
     const minPrice = product.variants && product.variants.length > 0
       ? Math.min(...product.variants.map(v => v.price))
-      : product.price;
-
-    const maxPrice = product.variants && product.variants.length > 0
-      ? Math.max(...product.variants.map(v => v.price))
       : product.price;
 
     const hasVariants = product.variants && product.variants.length > 1;
@@ -72,24 +84,24 @@
          <span class="product-card-price-from">from</span>`
       : `<span class="product-card-price-current">${CONFIG.CURRENCY}${minPrice}</span>`;
 
-    const imgSrc = product.imageURL || 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80';
+    const imgSrc = _safeImgSrc(product.imageURL);
 
     return `
       <div
         class="product-card"
         role="listitem"
         tabindex="0"
-        data-product-id="${product.id}"
-        aria-label="${product.name}, ${CONFIG.CURRENCY}${minPrice}"
+        data-product-id="${_esc(product.id)}"
+        aria-label="${_esc(product.name)}, ${CONFIG.CURRENCY}${minPrice}"
       >
         <div class="product-card-image">
           <img
-            src="${imgSrc}"
-            alt="${product.name}"
+            src="${_esc(imgSrc)}"
+            alt="${_esc(product.name)} at WOW BAKES"
             loading="lazy"
             width="300"
             height="225"
-            onerror="this.src='https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80'"
+            onerror="this.src='${FALLBACK_IMG}'"
           >
           ${product.featured ? '<div class="product-card-badge"><span class="badge badge-featured">⭐ Popular</span></div>' : ''}
         </div>
@@ -99,16 +111,16 @@
             ${jainBadge}
             ${spicyBadge}
           </div>
-          <h3 class="product-card-name">${product.name}</h3>
-          ${product.description ? `<p class="product-card-desc">${product.description}</p>` : ''}
+          <h3 class="product-card-name">${_esc(product.name)}</h3>
+          ${product.description ? `<p class="product-card-desc">${_esc(product.description)}</p>` : ''}
           <div class="product-card-footer">
             <div class="product-card-price">
               ${priceDisplay}
             </div>
             <button
               class="product-card-add"
-              aria-label="Add ${product.name} to cart"
-              data-product-id="${product.id}"
+              aria-label="Add ${_esc(product.name)} to cart"
+              data-product-id="${_esc(product.id)}"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
@@ -195,28 +207,30 @@
     });
 
     grid.innerHTML = sorted.map(cat => {
-      const count = countMap[cat.name] || 0;
-      const imgSrc = cat.imageURL || 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80';
+      const count  = countMap[cat.name] || 0;
+      const imgSrc = _safeImgSrc(cat.imageURL);
+      // Emoji is from our own trusted data — only allow single emoji characters
+      const emoji  = /^\p{Emoji}/u.test(cat.emoji || '') ? cat.emoji : '🍽';
       return `
         <a
           href="menu.html?category=${encodeURIComponent(cat.name)}"
           class="category-card reveal"
-          aria-label="${cat.name} — ${count} items"
+          aria-label="${_esc(cat.name)} — ${count} items"
           role="listitem"
         >
           <img
             class="category-card-image"
-            src="${imgSrc}"
-            alt="${cat.name}"
+            src="${_esc(imgSrc)}"
+            alt="${_esc(cat.name)} at WOW BAKES"
             loading="lazy"
             width="300"
             height="400"
-            onerror="this.src='https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&auto=format&fit=crop&q=80'"
+            onerror="this.src='${FALLBACK_IMG}'"
           >
           <div class="category-card-overlay" aria-hidden="true"></div>
           <div class="category-card-content">
-            <div class="category-card-icon" aria-hidden="true">${cat.emoji || '🍽'}</div>
-            <div class="category-card-name">${cat.name}</div>
+            <div class="category-card-icon" aria-hidden="true">${emoji}</div>
+            <div class="category-card-name">${_esc(cat.name)}</div>
             <div class="category-card-count">${count} item${count !== 1 ? 's' : ''}</div>
           </div>
         </a>
