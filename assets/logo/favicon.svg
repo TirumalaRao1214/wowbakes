@@ -1,5 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#C75B2A"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
-        font-family="Georgia,serif" font-size="30" font-weight="900" fill="white">W</text>
+  <circle cx="32" cy="32" r="31" fill="#F5ECD7" stroke="#3D1C0E" stroke-width="2.5"/>
+  <!-- Bottom tier orange -->
+  <rect x="14" y="40" width="36" height="10" rx="2" fill="#E8682A"/>
+  <!-- Bottom tier pink trim -->
+  <path d="M14 43 Q18 38 22 43 Q26 38 30 43 Q34 38 38 43 Q42 38 46 43 Q48 38 50 43" fill="#F472A0"/>
+  <!-- Middle tier pink -->
+  <rect x="19" y="30" width="26" height="11" rx="2" fill="#F472A0"/>
+  <!-- Middle tier orange trim -->
+  <path d="M19 33 Q23 28 27 33 Q31 28 35 33 Q39 28 43 33 Q45 28 45 33" fill="#E8682A"/>
+  <!-- Top tier brown -->
+  <rect x="24" y="22" width="16" height="10" rx="2" fill="#5C2D0A"/>
+  <!-- Topper -->
+  <rect x="29" y="16" width="6" height="7" rx="1" fill="#3D1C0E"/>
+  <ellipse cx="27" cy="18" rx="3.5" ry="2.5" fill="#3D1C0E" transform="rotate(-15 27 18)"/>
+  <ellipse cx="37" cy="18" rx="3.5" ry="2.5" fill="#3D1C0E" transform="rotate(15 37 18)"/>
+  <!-- Stand -->
+  <ellipse cx="32" cy="51" rx="18" ry="3" fill="#3D1C0E"/>
+  <rect x="30" y="48" width="4" height="5" fill="#3D1C0E"/>
+  <!-- Stars -->
+  <polygon points="11,40 12.2,36.5 13.4,40 17,40 14.3,42.2 15.3,46 12.2,43.8 9.1,46 10.1,42.2 7.4,40" fill="#E8682A"/>
+  <polygon points="53,40 54.2,36.5 55.4,40 59,40 56.3,42.2 57.3,46 54.2,43.8 51.1,46 52.1,42.2 49.4,40" fill="#E8682A"/>
 </svg>

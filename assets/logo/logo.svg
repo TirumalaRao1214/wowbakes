@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer circle border -->
+  <circle cx="100" cy="100" r="98" fill="#F5ECD7" stroke="#3D1C0E" stroke-width="4"/>
+  <!-- Inner circle border (thin) -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#3D1C0E" stroke-width="1.5"/>
+
+  <!-- Cake Stand base plate -->
+  <ellipse cx="100" cy="158" rx="46" ry="7" fill="#3D1C0E"/>
+  <!-- Stand stem -->
+  <rect x="95" y="138" width="10" height="20" rx="3" fill="#3D1C0E"/>
+  <!-- Stand top plate -->
+  <ellipse cx="100" cy="138" rx="36" ry="5.5" fill="#3D1C0E"/>
+
+  <!-- Bottom tier (orange) -->
+  <rect x="64" y="116" width="72" height="24" rx="4" fill="#E8682A"/>
+  <!-- Bottom tier scallop (wave trim — pink) -->
+  <path d="M64 116 Q70 108 76 116 Q82 108 88 116 Q94 108 100 116 Q106 108 112 116 Q118 108 124 116 Q130 108 136 116" fill="none" stroke="#E8682A" stroke-width="0" />
+  <path d="M64 120 Q70 112 76 120 Q82 112 88 120 Q94 112 100 120 Q106 112 112 120 Q118 112 124 120 Q130 112 136 120" fill="#F472A0" stroke="none"/>
+
+  <!-- Middle tier (pink) -->
+  <rect x="72" y="94" width="56" height="24" rx="4" fill="#F472A0"/>
+  <!-- Middle tier wave trim -->
+  <path d="M72 98 Q78 90 84 98 Q90 90 96 98 Q102 90 108 98 Q114 90 120 98 Q126 90 128 98" fill="#E8682A" stroke="none"/>
+
+  <!-- Top tier (brown/chocolate) -->
+  <rect x="82" y="74" width="36" height="22" rx="4" fill="#5C2D0A"/>
+  <!-- Top tier pink trim -->
+  <path d="M82 78 Q87 71 92 78 Q97 71 102 78 Q107 71 112 78 Q117 71 118 78" fill="#F472A0" stroke="none"/>
+
+  <!-- Cake topper bow/gift box -->
+  <rect x="93" y="60" width="14" height="14" rx="2" fill="#3D1C0E"/>
+  <!-- Bow loops left -->
+  <ellipse cx="88" cy="63" rx="7" ry="5" fill="#3D1C0E" transform="rotate(-20 88 63)"/>
+  <!-- Bow loops right -->
+  <ellipse cx="112" cy="63" rx="7" ry="5" fill="#3D1C0E" transform="rotate(20 112 63)"/>
+  <!-- Bow center knot -->
+  <ellipse cx="100" cy="65" rx="4" ry="4" fill="#3D1C0E"/>
+  <!-- Ribbon vertical -->
+  <rect x="98" y="60" width="4" height="14" fill="#5C2D0A"/>
+  <!-- Ribbon horizontal -->
+  <rect x="93" y="65" width="14" height="4" fill="#5C2D0A"/>
+
+  <!-- Left orange star -->
+  <polygon points="48,118 50.5,111 53,118 60,118 54.5,122.5 56.5,130 50.5,125.5 44.5,130 46.5,122.5 41,118" fill="#E8682A"/>
+
+  <!-- Right orange star -->
+  <polygon points="152,118 154.5,111 157,118 164,118 158.5,122.5 160.5,130 154.5,125.5 148.5,130 150.5,122.5 145,118" fill="#E8682A"/>
+
+  <!-- WOW text (left of stand) -->
+  <text x="62" y="174" font-family="Georgia, serif" font-size="14" font-weight="900" fill="#3D1C0E" text-anchor="middle" letter-spacing="1">WOW</text>
+
+  <!-- BAKES text (right of stand) -->
+  <text x="138" y="174" font-family="Georgia, serif" font-size="14" font-weight="900" fill="#3D1C0E" text-anchor="middle" letter-spacing="1">BAKES</text>
+</svg>
